@@ -2,7 +2,7 @@ package Pessoas;
 
     public class Pessoa {
 
-        private int id;
+
         private String nome;
         private String cpf;
         private String telefone;
@@ -12,8 +12,8 @@ package Pessoas;
 
         public Pessoa() {
         }
-        public Pessoa(int id, String nome, String cpf, String telefone, String email, String endereco) {
-            this.id = id;
+        public Pessoa( String nome, String cpf, String telefone, String email, String endereco) {
+
             this.nome = nome;
             this.cpf = cpf;
             this.telefone = telefone;
@@ -22,12 +22,6 @@ package Pessoas;
         }
 
 
-        public int getId() {
-            return id;
-        }
-        public void setId(int id) {
-            this.id = id;
-        }
         public String getNome() {
             return nome;
         }

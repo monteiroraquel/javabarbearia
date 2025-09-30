@@ -2,12 +2,20 @@ package Pessoas;
 
 public class Cliente extends Pessoa {
 
+    private int id;
 
     public Cliente() {
 
     }
     public Cliente(int id, String nome, String cpf, String telefone, String email, String endereco) {
-        super(id, nome, cpf, telefone, email, endereco);
+
+        super(nome, cpf, telefone, email, endereco);
+        this.id = id;
+
+    }
+
+    public int getId() {
+        return id;
     }
 
     @Override
