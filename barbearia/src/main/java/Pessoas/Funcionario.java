@@ -8,7 +8,7 @@ package Pessoas;
  *
  * @author KEL
  */
-public class Funcionario extends Cliente {
+public class Funcionario extends Pessoa {
 
     protected int id;
     protected static int gerarid=1;
