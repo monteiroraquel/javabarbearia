@@ -10,20 +10,25 @@ package Pessoas;
  */
 public class Funcionario extends Cliente {
 
+    protected int id;
+    protected static int gerarid=1;
     protected String cargo;
     protected double salario;
     protected String login;
     protected int senha;
 
-    public Funcionario() {}
+    public Funcionario() { this.id=gerarid++;}
 
     public Funcionario(String cargo, double salario, String login, int senha, int id, String nome, String cpf, String telefone, String email, String endereco) {
-        super(id, nome, cpf, telefone, email, endereco);
+        super(nome, cpf, telefone, email, endereco);
+        this.id=gerarid++;
         this.cargo = cargo;
         this.salario = salario;
         this.login = login;
         this.senha = senha;
     }
+
+    public int getId(){ return id; }
 
     public String getCargo() {
         return cargo;
